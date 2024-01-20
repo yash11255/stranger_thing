@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+     height: 100vh;
+      overflow-x: hidden;
+      perspective: 10px;
+      
+}
+.background{
+    transform: translateZ( -40px) scale(5);
+}
+.foreground{
+  transform: scale(3) translateZ(-20px ) translateY(5%);
+}
+.container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d ;
+    z-index: -1;
+}
+.background, .foreground{
+    position: absolute ;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.main{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4000px;
+    font-size: 10rem;
+    top: 10rem;
+    left: 50%;
+    bottom: 70%;
+    padding-bottom: 250px;
+    transform: translateX(-50%) translateY(-28%);
+    letter-spacing: 4px;
+    color: rgb(255,21,21);
+    text-shadow: 0 0 2500px rgb(0, 0, 30);
+}
+
+
+section{
+background-color: rgb(35, 32, 32);
+color: rgb(136, 40, 40);
+padding: 5rem 0;
+
+.sechead{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem ;
+    margin: 5rem 0 ;
+
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.disc{
+
+     position: absolute;
+     background-color: red;
+     padding: 0.5rem 2.5rem;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateX(-50%) translateX(45%) translateY(-35%);
+     color: black;
+     font-size: 3.5rem;   
+     font-weight: 600rem; 
+    
+}
+
+} 
+.bg1{
+    background-image: url(adv.png);
+}
+.bg2{
+    background-image: url(adv2.jpeg);
+}
+.bg3{
+    background-image: url(adv3.jpeg);
+}
